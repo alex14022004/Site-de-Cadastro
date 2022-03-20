@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #510f61;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.inicio{
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9370DB;
+    padding: 20px;
+}
+
+.inicio h3{
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.inicio button{
+    width: 150px;
+    height: 30px;
+    background-color: #8A2BE2;
+    border-radius: 10px;
+    margin: 5px;
+    color: #ffffff;
+    border: solid 2px;
+    border-color: #A9A9A9;
+}
+
+.inicio button:hover{
+    background-color: #4B0082;
+    border-color: #000000;
+}
+
+.teste{
+    margin: auto;
+}
+
+form{
+    margin-top: 100px;
+    color: #ffffff;
+    text-align: center;
+  
+    border-color: #8458db;
+    padding: 30px;
+    background-color: #510f61;
+}
+
+form h2{
+    margin-bottom: 20px;
+}
+
+.text{
+    background-color: #8458db;
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: #000000;
+    color: #ffffff;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #100429;
+    border: solid 1px;
+    color: #ffffff;
+    height: 30px;
+    width: 70px;
+    border-radius: 7px;
+}
+
+.btn:hover{
+    background-color: #8458db;
+    color: #000000;
+    border: solid 1px;
+}
+
+#cadastro{
+    display: none;
+}
+#atualizar{
+    display: none;
+}
+#visualizar{
+    display: none;
+}
+#deletar{
+    display: none;
+}
+#listaFuncionarios{
+    display: none;
+}
+
+

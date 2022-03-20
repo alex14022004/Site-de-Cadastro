@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro do Sistema</title>
+</head>
+<body>
+    <div class="inicio">
+        <h3>O que você deseja fazer?</h3>
+        <button onclick="mostrarCadastro()">Cadastrar Funcionário</button>   
+        <button onclick="mostrarAtualizar()">Atualizar Registro</button>    
+        <button onclick="mostrarVisualizar()">Consultar Funcionário</button>  
+        <button onclick="mostrarLista()">Ver Lista de Registros</button>    
+        <button onclick="mostrarDeletar()">Deletar Registro</button>     
+       
+
+    </div>
+    
+    <div class="teste">
+    
+        <form name="myform" id="cadastro" onsubmit="return false;">
+            <h2>Cadastro:</h2>
+            
+            <label>Digite o nome(a) do funcionário(a) que você quer cadastrar: </label><br>
+            <input type="text" name="name" class="text"><br>
+            <label>Digite o seu cargo (user ou admin):</label><br>
+            <input type="text" name="cargo" class="text"><br>
+            <input type="button" onclick="Cadastrar()" value="Enviar" class="btn">
+        </form>
+
+        <form name="myform2" id="atualizar" onsubmit="return false;">
+            <h2>Atualizar:</h2>
+            <label>Digite o nome do(a) funcionário(a) que você quer atualizar: </label><br>
+            <input type="text" name="name" class="text"><br>
+            <label>Digite o seu cargo (user ou admin):</label><br>
+            <input type="text" name="cargo" class="text"><br>
+            <input type="button" onclick="Atualizar()" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </form>
+
+        <form name="myform3" id="visualizar" onsubmit="return false;">
+            <h2>Visualizar:</h2>
+            <label>Digite o nome do(a) funcionário(a) que você quer visualizar: </label><br>
+            <input type="text" name="name" class="text"><br>
+            <input type="button" onclick="Visualizar()" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </form>
+
+        <form name="myform4" id="deletar" onsubmit="return false;">
+            <h2>Deletar:</h2>
+            <label>Digite o nome do(a) funcionário(a) que você quer deletar: </label><br>
+            <input type="text" name="name" class="text"><br>
+            <input type="button" onclick="Deletar()" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn">
+        </form>
+        
+        <form >
+            <div class="lista" id="listaFuncionarios">
+                <h2>Lista de Funcionários: </h2>
+                <p id="paragrafo"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="/scripts.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
